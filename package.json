@@ -1,0 +1,30 @@
+{
+  "name": "universalpicture",
+  "private": false,
+  "description": "Change your all social media pfp at the same time!",
+  "license": "",
+  "sideEffects": false,
+  "scripts": {
+    "build": "npm run build:css && remix build",
+    "build:css": "tailwindcss -o ./app/tailwind.css",
+    "dev": "concurrently \"npm run dev:css\" \"remix dev\"",
+    "dev:css": "tailwindcss -o ./app/tailwind.css --watch"
+  },
+  "dependencies": {
+    "@remix-run/node": "^1.4.3",
+    "@remix-run/react": "^1.4.3",
+    "@remix-run/serve": "^1.4.3",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@remix-run/dev": "^1.4.3",
+    "@remix-run/eslint-config": "^1.4.3",
+    "concurrently": "^7.1.0",
+    "eslint": "^7.14.0",
+    "tailwindcss": "^3.0.24"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}
