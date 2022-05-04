@@ -1,5 +1,5 @@
 import {json} from "@remix-run/node";
-import {useLoaderData} from "@remix-run/react";
+import {Link, useLoaderData} from "@remix-run/react";
 import {Button} from "../components/Button";
 import {Container} from "../components/Section"
 import {Avatar} from "../components/Avatar"
@@ -14,21 +14,21 @@ export async function loader() {
 }
 
 export default function Index() {
-    const userData = useLoaderData();
+    const user = useLoaderData();
 
     return (
         <Container type="white-shadow">
             <div className="p-5">
                 <Avatar
                     type="login"
-                    user={userData}
+                    user={user}
                 />
             </div>
             <div className="px-10">
-                <h1>Hey {userData.name}, Welcome!</h1>
+                <h1>Hey {user.name}, Welcome!</h1>
             </div>
             <div className="py-5">
-                <Button type="primary">Manage Account</Button>
+                <Link to="/account"><Button type="primary">Manage Account</Button></Link>
             </div>
         </Container>
     );

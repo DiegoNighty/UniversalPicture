@@ -1,5 +1,6 @@
 const avatarStyles = {
-    "login": `w-20 h-20 p-1 rounded-full`
+    "login": `w-20 h-20 p-1 rounded-full`,
+    "medium": "w-52 h-52 p-1 rounded-full"
 }
 
 export const Avatar = ({user, type, children, ...other}) => {

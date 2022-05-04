@@ -12,7 +12,7 @@ import fonts from "./fonts";
 
 export const meta = () => ({
     charset: "utf-8",
-    title: "HypoxTeam | Website 1.0.0",
+    title: "UniversalPicture | Change all pfp in a moment!",
     viewport: "width=device-width,initial-scale=1",
 });
 
@@ -30,7 +30,7 @@ export default function App() {
             <Meta/>
             <Links/>
         </head>
-        <body className="bg-white min-h-screen grid place-content-center">
+        <body className="bg-gradient-to-r from-rose-100 to-teal-100 min-h-screen grid place-content-center">
         <Outlet/>
         <ScrollRestoration/>
         <Scripts/>
