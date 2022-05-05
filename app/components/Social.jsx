@@ -1,51 +1,44 @@
 import * as Icons from "../icon/IconProvider"
+import {Button} from "../components/Button"
 
 export const Socials = ({divStyle}) => {
     return (
         <div className={divStyle}>
-            <button className="bg-blue-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+            <Button type="social-icon-large" background="bg-blue-500">
                 <Icons.Facebook/>
-            </button>
+            </Button>
 
-            <button className="bg-blue-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+            <Button type="social-icon-large" background="bg-blue-400">
                 <Icons.Twitter/>
-            </button>
+            </Button>
 
-            <button className="bg-red-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+            <Button type="social-icon-large" background="bg-red-500">
                 <Icons.Reddit/>
-            </button>
+            </Button>
 
-            <button className="bg-pink-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+            <Button type="social-icon-large" background="bg-pink-600">
                 <Icons.Pinterest/>
-            </button>
+            </Button>
 
-            <button className="bg-blue-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+            <Button type="social-icon-large" background="bg-blue-600">
                 <Icons.LinkedIn/>
-            </button>
+            </Button>
 
-            <button className="bg-red-600 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+            <Button type="social-icon-large" background="bg-red-600">
                 <Icons.Youtube/>
-            </button>
+            </Button>
 
-            <button className="bg-gray-700 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+            <Button type="social-icon-large" background="bg-gray-700">
                 <Icons.Github/>
-            </button>
+            </Button>
 
-            <button className="bg-red-500 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+            <Button type="social-icon-large" background="bg-red-500">
                 <Icons.Google/>
-            </button>
+            </Button>
 
-            <button className="bg-[#738ADB] p-2 font-semibold text-white inline-flex items-center space-x-2 rounded">
+            <Button type="social-icon-large" background="bg-[#738ADB]">
                 <Icons.Discord/>
-            </button>
+            </Button>
         </div>
     )
-
-    /*return (
-        socialList.map(social => (
-            <div className={elementStyle}>
-                <img key={social.id} className={imageStyle} src={social.img} alt={social.name} {...other}>{children}</img>
-            </div>
-        ))
-    );*/
 }
